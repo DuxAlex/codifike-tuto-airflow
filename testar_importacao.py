@@ -1,5 +1,6 @@
 try:
-    import json
-    print("O módulo json está disponível para importação.")
+    #digite a bibliteca que deseja testar se já esta no projeto
+    import operators
+    print("O módulo está disponível para importação.")
 except ImportError:
-    print("O módulo json NÃO está disponível.")
+    print("O módulo NÃO está disponível.")
