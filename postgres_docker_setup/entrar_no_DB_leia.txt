@@ -6,4 +6,8 @@ postgres_docker_setup-db-1
 
 docker exec -it postgres_docker_setup-db-1 psql -U northwind_user -d northwind
 
+
+executar dentro do banco
 \i /docker-entrypoint-initdb.d/northwind.sql
+
+\dt para obter retorno das tabelas disponíveis
