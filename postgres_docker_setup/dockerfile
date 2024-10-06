@@ -1,0 +1,8 @@
+# Usando a imagem oficial do PostgreSQL
+FROM postgres:latest
+
+# Copia o script de inicialização para o container
+COPY init.sql /docker-entrypoint-initdb.d/
+
+# Define a variável de ambiente para a senha do usuário postgres
+ENV POSTGRES_PASSWORD=postgres

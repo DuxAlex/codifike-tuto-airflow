@@ -1,0 +1,9 @@
+docker ps.
+
+docker exec -it <nome_do_container> psql -U northwind_user -d northwind
+
+postgres_docker_setup-db-1
+
+docker exec -it postgres_docker_setup-db-1 psql -U northwind_user -d northwind
+
+\i /docker-entrypoint-initdb.d/northwind.sql
